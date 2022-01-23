@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating a new element with javascript</title>
+    <style>
+      body {
+        background-color: #333;
+        color: #d1ba0f;
+      }
+      a {
+        font-weight: bold;
+        color: #0c822f;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Add an element to a web page with vanialla javascript</p>
+    <div id="target"></div>
+    <script type="text/javascript">
+      //
+      document.addEventListener('DOMContentLoaded', function () {
+        //
+        const newParagraph = document.createElement('p')
+        newParagraph.innerHTML = 'the quick brown fox'
+
+        document.getElementById('target').appendChild(newParagraph)
+      })
+      console.log('here')
+    </script>
+  </body>
+</html>
