@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const check_date = new Date('2022-06-01').getTime() + 2592000000
+      const current_date = Date.now()
+      if (check_date < current_date) {
+        console.log('expired')
+      } else {
+        console.log('not expired')
+      }
+    </script>
+  </head>
+  <body>
+    <div>check the console</div>
+  </body>
+</html>
