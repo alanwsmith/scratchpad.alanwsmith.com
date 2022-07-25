@@ -5,11 +5,13 @@
       const theDivs = [
         {
           id: 'id1',
-          color: 'crimson'
+          color: 'crimson',
+          bg: 'red',
         },
         {
           id: 'id2',
-          color: 'green'
+          color: 'green',
+          bg: 'green',
         },
       ]
 
@@ -19,7 +21,7 @@
         theDivs.forEach((theDiv) => {
           const newDiv = document.createElement('div')
           newDiv.innerHTML = `
-          <div class="someColor">
+          <div style="background-color: ${theDiv.bg} "class="fontStuff">
             <div>ID: ${theDiv.id}</div>
             <div>COLOR: ${theDiv.color}</div>
           <div>
@@ -38,5 +40,3 @@
     <div id="main_grid"></div>
   </body>
 </html>
-
-
