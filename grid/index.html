@@ -19,8 +19,10 @@
         theDivs.forEach((theDiv) => {
           const newDiv = document.createElement('div')
           newDiv.innerHTML = `
-          <div>ID: ${theDiv.id}</div>
-          <div>COLOR: ${theDiv.color}</div>
+          <div class="someColor">
+            <div>ID: ${theDiv.id}</div>
+            <div>COLOR: ${theDiv.color}</div>
+          <div>
             `
           mainGrid.appendChild(newDiv)
         })
