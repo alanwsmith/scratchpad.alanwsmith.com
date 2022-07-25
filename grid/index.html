@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const theDivs = [
+        {
+          id: 'id1',
+          color: 'crimson'
+        },
+        {
+          id: 'id2',
+          color: 'green'
+        },
+      ]
+
+      function makeDivs() {
+        const mainGrid = document.getElementById('main_grid')
+
+        theDivs.forEach((theDiv) => {
+          const newDiv = document.createElement('div')
+          newDiv.innerHTML = `ID: ${theDiv.id} - COLOR: ${theDiv.color}`
+          mainGrid.appendChild(newDiv)
+        })
+      }
+
+      window.addEventListener('DOMContentLoaded', (event) => {
+        makeDivs()
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Colors</h1>
+    <div id="main_grid"></div>
+  </body>
+</html>
+
+

@@ -11,6 +11,13 @@
         font-weight: bold;
         color: #0c822f;
       }
+      .newElement {
+        color: #777;
+      }
+      #newId {
+        font-weight: bolder;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -21,11 +28,13 @@
       document.addEventListener('DOMContentLoaded', function () {
         //
         const newParagraph = document.createElement('p')
+
         newParagraph.innerHTML = 'the quick brown fox'
+        newParagraph.classList.add('newElement')
+        newParagraph.id = 'newId'
 
         document.getElementById('target').appendChild(newParagraph)
       })
-      console.log('here')
     </script>
   </body>
 </html>
